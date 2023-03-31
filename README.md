@@ -4,7 +4,9 @@
 ### 스프라이트 이동방법 
 
 ```c#
-// 1. 힘을 줘서 이동 
+void FixedUpdate()
+    {
+        // 1. 힘을 줘서 이동 
         rigid.AddForce(inputVec);
 
         // 2. 속도 제어 
@@ -12,4 +14,5 @@
 
         // 3. 위치 이동 
         rigid.MovePosition(rigid.position + inputVec);
+    }
 ```
